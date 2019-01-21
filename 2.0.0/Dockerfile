@@ -23,11 +23,8 @@ RUN apt-get upgrade -y
 RUN DEBIAN_FRONTEND=noninteractive apt-get install -y tzdata
 
 # install .NET Core
-ENV DOTNET_VER "dotnet-sdk-2.2"
+ENV DOTNET_VER "dotnet-sdk-2.0"
 
-#RUN apt-cache search dotnet-sdk-2.2 aspnetcore-runtime-2.2
-
-#(apt-cache search dotnet-dev-2.2.0 | awk '{print $1}') | sh 
 RUN DEBIAN_FRONTEND=noninteractive  apt-get install ${DOTNET_VER} -y
 
 # install mono-devel
