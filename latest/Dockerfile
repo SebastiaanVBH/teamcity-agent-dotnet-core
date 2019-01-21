@@ -1,5 +1,5 @@
 FROM jetbrains/teamcity-agent
-LABEL maintainer "Jacek Kleczkowski <jacek@ksoft.biz>"
+LABEL maintainer "Sebastiaan Heemskerk <docker@banzi.nl>"
 
 # image is based on Ubuntu 15 - fix for .NET Core installation
 ADD libicu52_52.1-8_amd64.deb /tmp/libicu52_52.1-8_amd64.deb
